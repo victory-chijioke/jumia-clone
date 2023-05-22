@@ -1,0 +1,9 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --primary-color:#f68B1E;
+    --text-color-1:#313133;
+    --high-light-bg:#f1f1f3;
+    --high-light-color-1:var(--primary-color);
+    --hight-light-bg-2:#b17a05;
+}

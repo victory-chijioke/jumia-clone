@@ -1,0 +1,97 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 10px 20px;
+}
+.header-div{
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+.logo>img{
+    width: 135px;
+    object-fit: contain;
+}
+nav{
+    flex:1;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-end;
+}
+.s-form{
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.s-form>input{
+    padding: 12px 12px 12px 35px;
+    flex: 1;
+}
+.s-form>span{
+    position: absolute;
+    left: 10px;
+}
+.s-form>button{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 12px 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0 2px 3px 1px rgba(0,0,0,0.2);
+}
+.nav-div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+
+}
+.nav-div>div{
+    color: var(--test-color-1);
+    position: relative;
+}
+.nav-div>div>div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: var(--test-color-1);
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-div> div> div+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top:20px;
+    background-color:var(--white-color) ;
+    box-shadow:0 0 3px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: none;
+
+}
+.nav-div >div:hover > div+ul{
+    display: block;
+}
+.nav-div>div>div+ul>li{
+    padding: 10px;
+
+}
+.nav-div>div>div+ul>li:hover{
+    background-color: var(--high-light-bg);
+    cursor: pointer;
+}
